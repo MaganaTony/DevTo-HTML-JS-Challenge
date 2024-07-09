@@ -32,6 +32,7 @@ const createCard = (postData) => {
     title,
     avatar,
     timeread,
+    key
   } = postData;
   hashtag = hashtag.split(" ");
   // Card container
@@ -100,6 +101,16 @@ const createCard = (postData) => {
   cardDate.textContent = date;
   cardUserContent.appendChild(cardDate);
 
+  const editButton = document.createElement("button");
+  editButton.classList.add("btn", "btn-ghost", "fs-sm", "ms-auto");
+  editButton.textContent = "Edit";
+  firstSection.appendChild(editButton);
+  editButton.addEventListener("click", () => {
+    // console.log("edit button clicked");
+    window.location.href= `postDetail.html?q=${key}`
+  });
+
+
   //Middle content
   const middleContent = document.createElement("div");
   middleContent.classList.add("mt-3");
@@ -115,11 +126,11 @@ const createCard = (postData) => {
     "fw-bold",
     "link-title"
   );
-  titleLink.href = "";
   strong.textContent = title;
   titleLink.appendChild(strong);
   titleCard.appendChild(titleLink);
   middleContent.appendChild(titleCard);
+  
 
   const tags = document.createElement("div");
   tags.classList.add("tags", "mt-2");
@@ -187,7 +198,6 @@ const filterPostsByRelevant = async (getUsersfuntion) => {
   const relevantButton = document.getElementById("relevantButton");
   relevantButton.addEventListener("click", () => {
     const relevantPosts = posts.filter((post) => post.relevant === 5);
-    console.log(relevantPosts);
     // send the relevant posts to the createCard function and clear the previous posts
     const cardsContainer = document.querySelector("#allCards");
     cardsContainer.innerHTML = "";
