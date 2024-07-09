@@ -103,7 +103,7 @@ const createCard = (postData) => {
 
   const editButton = document.createElement("button");
   editButton.classList.add("btn", "btn-ghost", "fs-sm", "ms-auto");
-  editButton.textContent = "Edit";
+  editButton.textContent = "See more";
   firstSection.appendChild(editButton);
   editButton.addEventListener("click", () => {
     // console.log("edit button clicked");
