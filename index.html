@@ -38,7 +38,7 @@
                 </path>
               </svg>
             </button>
-            <input class="position-relative no-border w-50 border-0" type="text" placeholder="Search..." id="searchInput" />
+            <input class="border border-0 w-50" placeholder="Search..." id="searchInput" /> 
           </div>
           <div class="ms-auto me-3 d-flex justify-content-end align-items-center gap-3">
             <button class="d-block d-md-none bg-transparent btn btn-light" id="searchButton">
@@ -177,7 +177,7 @@
 
   <div class="container mt-4">
     <div class="row">
-      <div class="d-none d-md-block col-md-4 col-lg-3 flex-column p-0">
+      <div class="d-none d-md-block col-md-3 col-lg-3 flex-column p-0">
         <div class="leftAside">
           <nav class="menuList" id="DevCommunity">
             <ul class="nav flex-column">
@@ -188,15 +188,17 @@
                             <p><strong>DEV Community is a community of 1,716,077 amazing developers</strong></p>
                             <p class="asidi-p">We're a place where coders share, stay up-to-date and grow their careers.</p>
                             <div class="d-flex justify-content-center">
-                            <button onclick="window.location.href='./log-ing/login.html'" type="button"
-                                class="btn btn-outline-secondary btn-sm m-1 button-login">
-                                Log in
-                            </button>
-                            <button onclick="window.location.href='./create-a-count/create-a-count.html'"
+                              <div class="row justify-content-center">
+                                <button onclick="window.location.href='./create-a-count/create-a-count.html'"
                                 class="btn btn-outline-dark-morado text-nowrap button-create-account">
                                 Create account
-                            </button>
-                          </div>
+                                </button>
+                                <button onclick="window.location.href='./log-ing/login.html'"
+                                class="btn btn-outline-secondary text-nowrap button-login d-flex justify-content-center mt-3">
+                                Log in
+                                </button>
+                              </div>
+                             </div>
                         </div>
                  </div>
               </div>
@@ -389,155 +391,44 @@
           </div>
         </div>       
 
-        <div class="rightAside d-none col-3 d-lg-block">
+        <div class="rightAside d-none col-3 d-lg-block" id="container-hashtag-1">
           <div class="text-wrap">
             <!-- Tarjeta de Discusiones Activas -->
             <div class="card mb-3 border-light-subtle">
               <div class="card-header fw-bold fs-5 bg-transparent border-light-subtle">
-                Active discussions
+                #Css
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item border-light-subtle">
-                  <h6>
-                    <a href="#" class="link-dark-morado">Welcome Thread - v277</a>
-                  </h6>
-                  <div class="reactions">
-                    <span class="badge">204 Comments</span>
-                  </div>
-                </li>
-                <li class="list-group-item border-light-subtle">
-                  <h6>
-                    <a href="#" class="link-dark-morado">Best JavaScript One Liners that You Must Know</a>
-                  </h6>
-                  <div class="reactions">
-                    <span class="badge bg-transparent">18 comments</span>
-                  </div>
-                </li>
-                <li class="list-group-item border-light-subtle">
-                  <h6>
-                    <a href="#" class="link-dark-morado">Disater reporting w/Open Source LLaVA/AI for photo
-                      analysis</a>
-                  </h6>
-                  <div class="reactions">
-                    <span class="badge bg-transparent">4 comments</span>
-                  </div>
-                </li>
-                <li class="list-group-item border-light-subtle">
-                  <h6>
-                    <a href="#" class="link-dark-morado">Normalization in Rais 7.1 era</a>
-                  </h6>
-                  <div class="reactions">
-                    <span class="badge bg-transparent">1 comment</span>
-                  </div>
-                </li>
-                <li class="list-group-item">
-                  <h6>
-                    <a href="#" class="link-dark-morado">How to use React Server Components components on Storybook
-                      8</a>
-                  </h6>
-                  <div class="reactions">
-                    <span class="badge bg-transparent">18 comments</span>
-                  </div>
-                </li>
-              </ul>
+              <div><li></li><h6></h6></div>
+              <div><li></li><h6></h6></div>
+              <div><li></li><h6></h6></div>
+              <div><li></li><h6></h6></div>
+              <div><li></li><h6></h6></div>
             </div>
     
             <!-- Tarjeta de Anuncios -->
-            <div class="card mb-3 border-light-subtle">
+            <div class="card mb-3 border-light-subtle" id="container-hashtag-2">
               <div class="card-header d-flex flex-column bg-transparent border-light-subtle">
-                <span class="fs-5 fw-bold">#discuss</span>
-                <span class="fs-sm text-light-emphasis">Discussion threads targeting the whole community</span>
+                <span class="fs-5 fw-bold">#JavaScrip</span>
               </div>
-    
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item border-light-subtle">
-                  <h6>
-                    <a href="#" class="link-dark-morado">10 Key Data Structures We Wse Every Day</a>
-                  </h6>
-                  <div class="reactions">
-                    <span class="badge bg-warning">New</span>
-                  </div>
-                </li>
-                <li class="list-group-item border-light-subtle">
-                  <h6>
-                    <a href="#" class="link-dark-morado">My first DEV community post</a>
-                  </h6>
-                  <div class="reactions">
-                    <span class="badge bg-warning">New</span>
-                  </div>
-                </li>
-                <li class="list-group-item border-light-subtle">
-                  <h6>
-                    <a href="#" class="link-dark-morado">What was your win this week?</a>
-                  </h6>
-                  <div class="reactions">
-                    <span class="badge bg-transparent">49comments</span>
-                  </div>
-                </li>
-                <li class="list-group-item border-light-subtle">
-                  <h6>
-                    <a href="#" class="link-dark-morado">Web3 and the Democratization of the Internet</a>
-                  </h6>
-                  <div class="reactions">
-                    <span class="badge bg-transparent">1 comment</span>
-                  </div>
-                </li>
-                <li class="list-group-item border-light-subtle">
-                  <h6>
-                    <a href="#" class="link-dark-morado">Deep dive Demystifying JSON, BOSN and GSON</a>
-                  </h6>
-                  <div class="reactions">
-                    <span class="badge bg-warning">New</span>
-                  </div>
-                </li>
-              </ul>
+              <div><li></li><h6></h6></div>
+              <div><li></li><h6></h6></div>
+              <div><li></li><h6></h6></div>
+              <div><li></li><h6></h6></div>
+              <div><li></li><h6></h6></div>
             </div>
     
             <!-- Tarjeta de Eventos -->
-            <div class="card mb-3 border-light-subtle">
+            <div class="card mb-3 border-light-subtle" id="container-hashtag-3">
               <div class="card-header d-flex flex-column bg-transparent border-light-subtle">
-                <span class="fs-5 fw-bold">#watercooler</span>
-                <span class="fs-sm text-light-emphasis">Light and off-topic conversation</span>
+                <span class="fs-5 fw-bold">#HTML</span>
               </div>
-    
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item border-light-subtle">
-                  <h6>
-                    <a href="#" class="link-dark-morado"">If Error Messages Were
-                      Honest (and Cats)
-                    </h6>
-                    <div class=" reactions">
-                      <span class="badge bg-transparent">2 comments</span>
+              <div><li></li><h6></h6></div>
+              <div><li></li><h6></h6></div>
+              <div><li></li><h6></h6></div>
+              <div><li></li><h6></h6></div>
+              <div><li></li><h6></h6></div>
             </div>
-            </li>
-            <li class="list-group-item border-light-subtle link-danger">
-              <h6>
-                <a href="#" class="link-dark-morado">We need to slow down, Everything is going too fast</a>
-              </h6>
-              <div class="reactions">
-                <span class="badge bg-warning">New</span>
-              </div>
-            </li>
-            <li class="list-group-item border-light-subtle">
-              <h6>
-                <a href="#" class="link-dark-morado">Working hard or hardly working</a>
-              </h6>
-              <div class="reactions">
-                <span class="badge bg-transparent">1 comment</span>
-              </div>
-            </li>
-            <li class="list-group-item border-light-subtle">
-              <h6>
-                <a href="#" class="link-dark-morado">New Privacy Software Promises Unbreakable Security: Can It
-                  Protect You from Big Tech?</a>
-              </h6>
-              <div class="reactions">
-                <span class="badge bg-transparent">3 comment</span>
-              </div>
-            </li>
-            </ul>
           </div>
-            </div>
         </div>
         
       </div>
